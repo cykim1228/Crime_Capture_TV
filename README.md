@@ -1,77 +1,200 @@
-# 📹 Crime Capture TV : 무인점포 이상행동 탐지 시스템 (AI part)
 
-메타버스 아카데미 9월 프로젝트
+# :video_camera: CRIME CAPTURE TV
 
-#### 🎥 시연 영상 보러가기([Click](https://www.youtube.com/watch?v=6DgZkKN7O5s))
-#### 📙 발표자료 보러가기([Click](https://github.com/crime-capture-tv/AI-server/blob/main/docs/Crime_capture_TV_presentation.pdf))
+### :bookmark: CCTV를 이용하여 무인점포 이상행동을 감지하는 시스템 '크캡티비'
 
-<img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/ace435a8-d4b3-4291-8627-dc59e052e55d" width="70%">
+## :thought_balloon: 프로젝트 기획
 
-<br/>
+기획 의도
+> ![image](https://github.com/cykim1228/Crime_Capture_TV/assets/40597647/2c1a8257-e738-4549-a964-d86938a98d7f)
 
-# :family: 팀원 소개 및 역할
+기능 기획
+> 범죄 의심 영상 저장  
+> 영상 데이터 분석  
+> 데이터 보관 및 관리  
 
-**개발기간: 2023.09.04 ~ 2023.09.27**
+## :calendar: 프로젝트 기간
 
-#### AI
-| AI | AI | AI | AI |
-|:--:|:--:|:--:|:--:|
-| [정민교](https://github.com/MinkyoJeong1) | [김종민](https://github.com/jongminKims) | [김찬영](https://github.com/cykim1228) | [최눈솔](https://github.com/choiary) |
+> 2023.09.04 ~ 09.27
 
-#### Server
-| server | server | server |
-|:------:|:------:|:------:|
-| [박태근](https://github.com/taegeun-park0525) | [김나영](https://github.com/kny3037) | [이주원](https://github.com/juunewon) |
-
-#### 기획
-| 기획 | 기획 | 기획 |
-|:---:|:---:|:---:|
-| [김영식](https://github.com/sikomar00) | [이성균](https://github.com/seongkyunlee) | [이지수](https://github.com/geeeeesu) |
-
-<br/>
-
-### AI 세부 역할 분담
+## :family: 참여 인원
 
 <table>
-    <tbody>
-        <tr>
-            <td><b>정민교</b></td>
-            <td>데이터 전처리 및 VideoMAE model fine tuning</td>
-        </tr>
-        <tr>
-            <td><b>김종민</b></td>
-            <td>Yolo-v8을 이용한 humam detecting, 라즈베리 파이 CCTV 제작</td>
-        </tr>
-        <tr>
-            <td><b>김찬영</b></td>
-            <td>데이터 전처리 및 model serving</td>
-        </tr>
-        <tr>
-            <td><b>최눈솔</b></td>
-            <td>데이터 전처리</td>
-        </tr>
-    </tbody>
+  <tr>
+    <td align="center"><a href="https://github.com/MinkyoDev">
+      <img src="https://avatars.githubusercontent.com/MinkyoDev" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/jongminKims">
+      <img src="https://avatars.githubusercontent.com/jongminKims" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/choiary">
+      <img src="https://avatars.githubusercontent.com/choiary" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/cykim1228">
+      <img src="https://avatars.githubusercontent.com/cykim1228" width="150px;" alt="">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/MinkyoDev"><b>정민교</b></td>
+    <td align="center"><a href="https://github.com/jongminKims"><b>김종민</b></td>
+    <td align="center"><a href="https://github.com/choiary"><b>최눈솔</b></td>
+    <td align="center"><a href="https://github.com/cykim1228"><b>김찬영</b></td>
+  </tr>
+ <tr>
+    <td align="center">Jeong Min Kyo</td>
+    <td align="center">Kim Jong Min</td>
+    <td align="center">Choi Noon sol</td>
+    <td align="center">Kim Chan Young</td>
+  </tr>
 </table>
 
-<br/>
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/taegeun-park">
+      <img src="https://avatars.githubusercontent.com/taegeun-park" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/kny3037">
+      <img src="https://avatars.githubusercontent.com/kny3037" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/juunewon">
+      <img src="https://avatars.githubusercontent.com/juunewon" width="150px;" alt="">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/taegeun-park"><b>박태근</b></td>
+    <td align="center"><a href="https://github.com/kny3037"><b>김나영</b></td>
+    <td align="center"><a href="https://github.com/juunewon"><b>이주원</b></td>
+  </tr>
+ <tr>
+    <td align="center">Park Tae Geun</td>
+    <td align="center">Kim Na Young</td>
+    <td align="center">Lee Ju Won</td>
+  </tr>
+</table>
 
-# 🤝 융합 구조도
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/sikomar00">
+      <img src="https://avatars.githubusercontent.com/sikomar00" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/seongkyunlee">
+      <img src="https://avatars.githubusercontent.com/seongkyunlee" width="150px;" alt="">
+    </td>
+    <td align="center"><a href="https://github.com/geeeeesu">
+      <img src="https://avatars.githubusercontent.com/geeeeesu" width="150px;" alt="">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/sikomar00"><b>김영식</b></td>
+    <td align="center"><a href="https://github.com/seongkyunlee"><b>이성균</b></td>
+    <td align="center"><a href="https://github.com/geeeeesu"><b>이지수</b></td>
+  </tr>
+ <tr>
+    <td align="center">Kim Young Sik</td>
+    <td align="center">Lee Sung Kyun</td>
+    <td align="center">Lee Gee Su</td>
+  </tr>
+</table>
 
-<img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/8331fda9-c20e-4ec2-b15c-c77a56ed916d" width="70%">
+## :white_check_mark: 역할 분담
+#### AI 파트  
+> - 정민교 : 데이터 전처리 + VideoMAE Model Fine Tuning
+> - 김종민 : Yolo V8 을 이용한 Human Detecting + 라즈베리 파이 CCTV 제작
+> - 최눈솔 : 데이터 전처리
+> - 김찬영 : 데이터 전처리 + Model Serving
 
-<br/>
+#### 서버 파트  
+> - 박태근
+> - 김나영
+> - 이주원
 
-# 💡 프로젝트 소개
+#### 기획 파트  
+> - 김영식
+> - 이성균
+> - 이지수
 
-**cctv를 이용하여 무인점포 내에서 일어나는 이상행동을 감지하는 시스템을 제작**
+## :moneybag: 프로젝트 예산
 
-<img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/f3c49525-2b6c-48aa-84a0-1ff56e1ddd0f" width="70%">
+#### 공용 서버 
+> Intel i9 / GTX 4090 24G VRAM x2 / 64G RAM  
 
-<img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/16740b64-0e7b-4a54-ae72-5bc4e7433f30" width="70%">
+#### AI 서버
+> 개인 노트북 이용  
+#### BackEnd 서버
+> 개인 노트북 이용  
+#### FrontEnd 서버
+> 개인 노트북 이용  
+#### 라즈베리 파이
+> RAM 8G / CAMERA 모듈 / LAN
 
-<br/>
+## :books: 사용 기술
 
-# :scroll: 주요 내용
+#### AI
+
+> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+> <img src="https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+
+#### BackEnd
+
+> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+> <img src="https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white">
+
+#### FrontEnd
+
+> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+#### Database
+
+> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+> <img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white">
+
+#### AI Models
+
+> <img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">  
+> <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">  
+
+> Human Detecting - Yolo V8  
+> Video Masked Encoding - VideoMAE
+
+## :bar_chart: 구조
+
+<details>
+<summary>Structure</summary>
+<div markdown="1" style="padding-left: 15px;">
+<img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/8331fda9-c20e-4ec2-b15c-c77a56ed916d"/>
+</div>
+</details>
+
+## :key: 핵심 기능
+
+#### :one: 범죄 의심 영상 저장
+
+> 범죄 의심 행동이 CCTV에 촬영 시 범죄 의심 영상을 유형 별로 저장  
+> 사건 조사와 증거에 필요한 영상 자료를 관리하기 위함  
+> [코드 보러가기](https://github.com/cykim1228/Crime_Capture_TV/blob/main/yourstore/main.py#L31)  
+
+#### :two: 영상 데이터 분석
+
+> VideoMAE를 통해 행동 분류 및 이상 행동 판별  
+> 사람의 걷는 행동 , 물건을 집는 행동 , 물건을 넣는 행동 , 물건을 내려놓는 행동 의 4가지 행동으로 나눠서 판단  
+> [코드 보러가기](https://github.com/cykim1228/Crime_Capture_TV/blob/main/yourstore/classification_process.py#L18)  
+
+#### :three: 데이터 보관 및 관리
+
+> 데이터를 백업하고 접근 권한을 제어하여 보안성을 올림  
+
+## :dart: 이슈 사항
+
+#### :one: CCTV의 프레임 저하 발생
+
+> 라즈베리 파이 카메라 모듈로 송출하는 CCTV 영상의 프레임이 떨어져  
+> 뚝뚝 끊어지며 움직이는 증상 발생  
+> 네트워크 이슈로 확인되며 트래픽이 발생하지 않을 때 정상작동 됨을 확인
+
+## :scroll: 주요 내용
 
 ### 1. Prepare data set
 
@@ -187,23 +310,7 @@
 
 <img src="https://github.com/crime-capture-tv/AI-server/assets/141614581/2ec8a1e4-12c8-4838-bc32-dafb11b181ef" width="70%">
 
-<br/>
-
-# 🛠 기술 스택
-
-### - 언어
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-
-### - 주요 라이브러리
- <img src="https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"> <img src="https://img.shields.io/badge/yolov8-00FFFF?style=for-the-badge&logo=yolo&logoColor=white">
-
-### - 개발 툴
-<img src="https://img.shields.io/badge/VS code-2F80ED?style=for-the-badge&logo=VS code&logoColor=white"> <img src="https://img.shields.io/badge/Google Colab-F9AB00?style=for-the-badge&logo=Google Colab&logoColor=white">
-
-### - 협업 툴
-<img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
-
-# 🔍 참고자료
+## :pushpin: 참고 자료
 
 ### Papers
 
@@ -216,3 +323,7 @@
 1. [VideoMAE](https://github.com/MCG-NJU/VideoMAE)
 2. [ViViT](https://github.com/rishikksh20/ViViT-pytorch)
 
+## :video_camera: 시연 영상
+
+#### 🎥 시연 영상 보러가기([Click](https://www.youtube.com/watch?v=6DgZkKN7O5s))
+#### 📙 발표자료 보러가기([Click](https://github.com/crime-capture-tv/AI-server/blob/main/docs/Crime_capture_TV_presentation.pdf))
